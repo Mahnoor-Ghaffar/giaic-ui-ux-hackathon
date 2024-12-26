@@ -1,4 +1,8 @@
 "use client";
+<<<<<<< HEAD
+=======
+
+>>>>>>> f1ab95f4c6a92dbf6406e6aeb50179333a005678
 import {
   FaSearch,
   FaHeart,
