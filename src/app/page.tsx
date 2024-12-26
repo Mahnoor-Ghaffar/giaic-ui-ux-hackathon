@@ -8,6 +8,8 @@ import ProductCard from './components/HomeComponents/Products-Cards';
 import SecondHero from './components/HomeComponents/secondHero';
 import ThirdHero from './components/HomeComponents/ThirdHero';
 import FeaturedPost from './components/HomeComponents/FeaturedPost';
+import FooterNavbar from './components/HomeComponents/FooterNavbar';
+import CenterText from './components/HomeComponents/CenterText';
 
 const Home = () => {
   return (
@@ -16,10 +18,23 @@ const Home = () => {
     <Header />
     <Hero />
     <FourCards />
+
+    {/* Heading */}
+    <CenterText 
+      headings={[
+        { 
+          smallHeading: "FEATURED PRODUCTS",
+          title: "BESTSELLER PRODUCTS", 
+          subheading: "Problems trying to resolve the conflict between" 
+        }
+      ]} 
+      />
+
     <ProductCard />
     <SecondHero />
     <ThirdHero />
     <FeaturedPost />
+    <FooterNavbar />
     <Footer />
    </main>
   )

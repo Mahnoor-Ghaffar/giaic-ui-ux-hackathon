@@ -12,21 +12,9 @@ import CenterText from "./CenterText";
 
 export default function ProductCard() {
   return (
-    <section>
-
-      {/* Heading */}
-      <CenterText 
-      headings={[
-        { 
-          smallHeading: "FEATURED PRODUCTS",
-          title: "BESTSELLER PRODUCTS", 
-          subheading: "Problems trying to resolve the conflict between" 
-        }
-      ]} 
-      />
-
+    <section className="w-full flex justify-center items-center">
       {/* Cards */}
-      <div className="w-full flex justify-center">
+      <div className="w-[85%] flex justify-center">
       <div className="sm:w-[90%] w-[95%]  flex flex-col gap-[80px]">
         
 
@@ -37,8 +25,8 @@ export default function ProductCard() {
             (pic, index) => (
               <div key={index} className="w-[238px] h-[615px] mx-auto">
                 <div className="w-full h-full">
-                  <div className="w-[239px] h-[427px]">
-                    <Image src={pic} alt={`picture${index + 1}`} />
+                  <div className="w-[239px] h-[400px]">
+                    <Image src={pic} alt={`picture${index + 1}`} className="w-[239px] h-[400px]" />
                   </div>
                   <CardText />
                 </div>
@@ -51,3 +39,6 @@ export default function ProductCard() {
     </section>
   );
 }
+
+
+

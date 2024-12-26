@@ -1,8 +1,18 @@
-import { FaPhoneAlt, FaEnvelope, FaInstagram, FaFacebook, FaTwitter, FaYoutube } from 'react-icons/fa';
+ import {
+  FaPhoneAlt,
+  FaEnvelope,
+  FaInstagram,
+  FaFacebook,
+  FaTwitter,
+  FaYoutube,
+} from "react-icons/fa";
 
-function AnnouncementBar() {
+function AnnouncementBar({ bgColor = "var(--Announcment-bar)" }) {
   return (
-    <div className="hidden sm:flex w-full bg-[var(--Announcment-bar)] text-white items-center justify-between px-4 lg:px-8 xl:px-12 h-[50px]">
+    <div
+      className={`hidden sm:flex w-full text-white items-center justify-between px-4 lg:px-8 xl:px-12 h-[50px]`}
+      style={{ backgroundColor: bgColor }}
+    >
       {/* Left Side: Contact Info */}
       <div className="flex items-center gap-4">
         {/* Phone */}

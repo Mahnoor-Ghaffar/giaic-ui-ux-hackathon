@@ -1,5 +1,4 @@
 "use client";
-/* eslint-disable @typescript-eslint/no-unused-vars */
 import {
   FaSearch,
   FaHeart,
@@ -52,7 +51,7 @@ function Header() {
                 className="relative group px-2 py-4 flex items-center gap-2 cursor-pointer"
                 onClick={toggleDropdown}
               >
-                <Link href="/shop" className="hover:underline underline-offset-2">
+                <Link href="/Products" className="hover:underline underline-offset-2">
                   Shop
                 </Link>
                 {dropdownOpen ? (
@@ -66,29 +65,29 @@ function Header() {
                   }`}
                 >
                   <li className="px-4 py-2 hover:bg-gray-100">
-                    <Link href="/shop/category-1">Category 1</Link>
+                    <Link href="/Products">Category 1</Link>
                   </li>
                   <li className="px-4 py-2 hover:bg-gray-100">
-                    <Link href="/shop/category-2">Category 2</Link>
+                    <Link href="/Products">Category 2</Link>
                   </li>
                   <li className="px-4 py-2 hover:bg-gray-100">
-                    <Link href="/shop/category-3">Category 3</Link>
+                    <Link href="/Products">Category 3</Link>
                   </li>
                 </ul>
               </li>
 
               {/* Other Links */}
               <li className="px-2 py-4 hover:underline underline-offset-2">
-                <Link href="/about">About</Link>
+                <Link href="/about-2">About</Link>
               </li>
               <li className="px-2 py-4 hover:underline underline-offset-2">
-                <Link href="/blog">Blog</Link>
+                <Link href="/Products">Blog</Link>
               </li>
               <li className="px-2 py-4 hover:underline underline-offset-2">
                 <Link href="/contact">Contact</Link>
               </li>
               <li className="px-2 py-4 hover:underline underline-offset-2">
-                <Link href="/pages">Pages</Link>
+                <Link href="/about">Pages</Link>
               </li>
 
               {/* Login/Register - Visible only on smaller screens */}

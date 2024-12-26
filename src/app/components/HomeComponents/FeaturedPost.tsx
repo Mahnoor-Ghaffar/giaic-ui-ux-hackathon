@@ -2,7 +2,7 @@ import React from 'react'
 import CenterText from './CenterText';
 import Image from "next/image";
 import post1 from "@/../public/assets/Homepage/fixed-height.png";
-import post2 from "@/../public/assets/Homepage/fixed-height.png";
+import post2 from "@/../public/assets/Homepage/unsplash_dEGu-oCuB1Y.png";
 import post3 from "@/../public/assets/Homepage/fixed-height.png";
 
 const FeaturedPost = () => {
